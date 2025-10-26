@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #0A2342;
+  --accent: #F0B429;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--fg);
+  background: var(--bg);
+}
+
+/* Headings use the Quintessential font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Utility: explicitly use the body font variable when needed */
+.font-body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Utility: explicitly use the heading font (Quintessential) when needed */
+.font-heading {
+  font-family: var(--font-heading), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Smooth scroll for in-page nav */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure anchored sections account for the header height */
+[id] {
+  scroll-margin-top: 80px;
+}
