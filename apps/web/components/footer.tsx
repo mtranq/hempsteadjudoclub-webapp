@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function Footer() {
   return (
     <footer className="border-t border-gray-200 mt-12">
-      <div className="mx-auto max-w-6xl px-4 py-8 grid gap-6 md:grid-cols-3 text-sm">
+  <div className="mx-auto max-w-6xl px-4 py-8 grid gap-6 md:grid-cols-4 text-sm">
         <div>
           <div className="font-semibold mb-2">Hempstead Judo Club</div>
           <p className="text-gray-600"> 335 Greenwich Street Hempstead, NY 11550</p>
@@ -30,6 +30,31 @@ export function Footer() {
                 className="hover:text-gold"
               >
                 Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="font-semibold mb-2">Helpful</div>
+          <ul className="space-y-1">
+            <li>
+              <a
+                href="https://judoinfo.com/lessons/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold"
+              >
+                Learn More About Judo
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.usja.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold"
+              >
+                United States Judo Association
               </a>
             </li>
           </ul>

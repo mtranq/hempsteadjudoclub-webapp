@@ -145,6 +145,7 @@ export default async function HomePage() {
       <section id="coaches" className="py-16">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="text-3xl font-bold">Coaches</h2>
+          <p className="mt-2 text-gray-600">Click or tap a coach to view their bio and more information.</p>
           {teamImages.length > 0 ? (
             <CoachesGrid
               items={teamImages
@@ -182,6 +183,24 @@ export default async function HomePage() {
               Hempstead Judo Club does not charge a fee to become a member. However, students will pay for their own
               uniform and other related materials. Certain additional activities may require a fee. Contact us for more information.
             </p>
+          </div>
+
+          {/* Donations */}
+          <div className="mt-6 rounded-lg border border-gold/30 bg-white p-6">
+            <h3 className="text-xl font-semibold">Donations</h3>
+            <p className="text-gray-700 mt-2">
+              As a volunteer‑run organization, donations help us keep classes affordable, maintain equipment, and
+              offer need‑based support for students. If you’d like to make a donation or become a sponsor, please
+              email us and we’ll follow up with next steps.
+            </p>
+            <div className="mt-4">
+              <a
+                href="mailto:hempsteadjudoclub@gmail.com?subject=Donation%20to%20Hempstead%20Judo%20Club"
+                className="inline-flex items-center justify-center rounded-md bg-navy px-5 py-3 font-semibold text-white hover:bg-navy/90 focus:outline-none focus:ring-2 focus:ring-gold/50"
+              >
+                Email about Donations
+              </a>
+            </div>
           </div>
         </div>
       </section>
