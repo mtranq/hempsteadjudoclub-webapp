@@ -9,7 +9,7 @@ export function Navbar() {
   const [active, setActive] = useState<string>('');
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [logoSrc, setLogoSrc] = useState<string>('/brand/possiblelogo_symbol.png');
+  const [logoSrc, setLogoSrc] = useState<string>('/brand/logo2.svg');
 
   useEffect(() => {
     const ids = sections.filter(Boolean);

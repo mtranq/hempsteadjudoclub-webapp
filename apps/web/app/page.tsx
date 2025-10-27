@@ -173,6 +173,46 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Team / Staff */}
+      <section id="team" className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-2xl font-bold">Club Staff & Volunteers</h2>
+          <p className="mt-2 text-gray-700 max-w-3xl">Our volunteers help the club run smoothly on and off the mat.</p>
+
+          <div className="grid gap-6 md:grid-cols-3 mt-6">
+            {[ 
+              { name: 'Gregory Lazarre', role: 'Public Relations' },
+              { name: 'Michelle Robinson', role: 'Email', link: { href: 'mailto:hempsteadjudoclub@gmail.com', label: 'hempsteadjudoclub@gmail.com' } },
+              { name: 'Susan Peterson', role: 'Facebook', link: { href: 'https://www.facebook.com/HempsteadJudo/', label: 'Facebook Page' } },
+              { name: 'Wildrid Juste', role: 'Administrative Assistant' },
+              { name: 'Johnny Tranquille', role: 'Webmaster' },
+            ].map((p) => (
+              <div key={p.name} className="border rounded-lg bg-white p-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-lg font-semibold">{p.name}</div>
+                    <div className="text-sm text-gray-600">{p.role}</div>
+                  </div>
+                </div>
+                {p.link ? (
+                  <div className="mt-3">
+                    <a
+                      href={p.link.href}
+                      target={p.link.href.startsWith('http') ? '_blank' : undefined}
+                      rel={p.link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className="inline-flex items-center gap-2 text-navy font-medium hover:underline"
+                    >
+                      {p.link.label}
+                      <span aria-hidden>→</span>
+                    </a>
+                  </div>
+                ) : null}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Membership */}
       <section id="membership" className="py-16 bg-gray-50">
         <div className="mx-auto max-w-6xl px-4">
