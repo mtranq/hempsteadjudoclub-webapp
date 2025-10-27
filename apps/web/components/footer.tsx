@@ -8,6 +8,8 @@ export function Footer() {
           <div className="font-semibold mb-2">Hempstead Judo Club</div>
           <p className="text-gray-600"> 335 Greenwich Street Hempstead, NY 11550</p>
           <p className="text-gray-600">Sat 12pm–3pm</p>
+          <p className="text-gray-600">Phone: (646) 339-5395</p>
+          <p className="text-gray-600">Email: hempsteadjudoclub@gmail.com</p>
         </div>
         <div>
           <div className="font-semibold mb-2">Links</div>

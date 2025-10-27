@@ -183,6 +183,14 @@ export default async function HomePage() {
               Hempstead Judo Club does not charge a fee to become a member. However, students will pay for their own
               uniform and other related materials. Certain additional activities may require a fee. Contact us for more information.
             </p>
+            <div className="mt-4">
+              <a
+                href="mailto:hempsteadjudoclub@gmail.com?subject=Membership%20Inquiry"
+                className="inline-flex items-center justify-center rounded-md bg-navy px-5 py-3 font-semibold text-white hover:bg-navy/90 focus:outline-none focus:ring-2 focus:ring-gold/50"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
 
           {/* Donations */}
