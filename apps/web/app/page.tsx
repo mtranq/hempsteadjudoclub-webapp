@@ -182,8 +182,8 @@ export default async function HomePage() {
           <div className="grid gap-6 md:grid-cols-3 mt-6">
             {[ 
               { name: 'Gregory Lazarre', role: 'Public Relations' },
-              { name: 'Michelle Robinson', role: 'Email', link: { href: 'mailto:hempsteadjudoclub@gmail.com', label: 'hempsteadjudoclub@gmail.com' } },
-              { name: 'Susan Peterson', role: 'Facebook', link: { href: 'https://www.facebook.com/HempsteadJudo/', label: 'Facebook Page' } },
+              { name: 'Berthony Juste', role: 'Email', link: { href: 'mailto:hempsteadjudoclub@gmail.com', label: 'hempsteadjudoclub@gmail.com' } },
+              { name: 'Berthony Juste', role: 'Facebook', link: { href: 'https://www.facebook.com/HempsteadJudo/', label: 'Facebook Page' } },
               { name: 'Wildrid Juste', role: 'Administrative Assistant' },
               { name: 'Johnny Tranquille', role: 'Webmaster' },
             ].map((p) => (
